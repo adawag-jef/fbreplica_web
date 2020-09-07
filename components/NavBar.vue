@@ -11,6 +11,7 @@
       </div>
       <div class="navbar-menu">
         <div class="navbar-end">
+          <nuxt-link class="navbar-item" to="/sample">Sample</nuxt-link>
           <div class="navbar-item has-dropdown is-hoverable" v-if="isAuthenticated">
             <a class="navbar-link">
               {{ loggedInUser.username }}
