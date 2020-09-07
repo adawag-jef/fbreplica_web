@@ -61,24 +61,30 @@ export default {
     '@nuxtjs/auth'
   ],
 
-  auth: {
-    strategies: {
-      local: {
-        endpoints: {
-          login: { url: 'login', method: 'post', propertyName: 'data.token' },
-          user: { url: 'me', method: 'get', propertyName: 'data' },
-          logout: false
-        }
-      }
-    }
-  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
+
   axios: {
     baseURL: 'http://127.0.0.1:8000/api'
   },
+
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: 'login/', method: 'post', propertyName: 'token'},
+          user: { url: 'currentuser/', method: 'get', propertyName: false },
+          logout: false
+        },
+        tokenRequired: true,
+        tokenType: 'Bearer'
+      }
+    }
+
+  },
+  
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module

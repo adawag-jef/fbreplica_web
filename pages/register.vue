@@ -3,7 +3,7 @@
     <div class="container">
       <div class="columns">
         <div class="column is-4 is-offset-4">
-          <h2 class="title has-text-centered">Register!</h2>
+          <h2 class="title has-text-centered">Register</h2>
 
           <Notification :message="error" v-if="error"/>
 
@@ -78,6 +78,8 @@ export default {
     Notification,
   },
 
+  middleware: 'guest',
+
   data() {
     return {
         name: '',
@@ -98,9 +100,9 @@ export default {
             password: this.password
         })
 
-        await this.$auth.loginWith('login/', {
+        await this.$auth.loginWith('local', {
           data: {
-            email: this.email,
+            username: this.username,
             password: this.password
           },
         })
