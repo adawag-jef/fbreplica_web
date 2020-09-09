@@ -34,6 +34,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/transitions.css',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -67,7 +68,7 @@ export default {
   */
 
   axios: {
-    baseURL: 'http://127.0.0.1:8000/api'
+    baseURL: 'http://localhost:8000/api'
   },
 
   auth: {
@@ -75,11 +76,17 @@ export default {
       local: {
         endpoints: {
           login: { url: 'login/', method: 'post', propertyName: 'token'},
-          user: { url: 'currentuser/', method: 'get', propertyName: false },
+          user: { url: 'currentuser/', method: 'get', propertyName: 'data' },
           logout: false
         },
         tokenRequired: true,
         tokenType: 'Bearer'
+      },
+      redirect: {
+        login: '/login',
+        logout: '/',
+        callback: '/login',
+        home: '/login'
       }
     }
 

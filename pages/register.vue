@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section mb-4">
     <div class="container">
       <div class="columns">
         <div class="column is-4 is-offset-4">
