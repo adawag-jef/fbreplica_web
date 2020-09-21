@@ -1,6 +1,6 @@
 <template>
     
-  <v-card class="overflow-hidden">
+  <v-card class="">
     <v-app-bar
       absolute
       elevate-on-scroll

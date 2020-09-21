@@ -28,6 +28,9 @@ export default {
       {
         rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css'
       }
+    ],
+    script: [
+
     ]
   },
   /*
@@ -36,6 +39,15 @@ export default {
   css: [
     '~/assets/css/transitions.css',
   ],
+
+  /*
+  ** Global JS
+  */
+
+  // script: [
+  //   '~/assets/js/script.js',
+  // ],
+  
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
