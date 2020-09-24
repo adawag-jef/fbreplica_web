@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar/>
-    <v-spacer>--</v-spacer>
+    <v-spacer></v-spacer>
     <nuxt/>
   </div>
 </template>

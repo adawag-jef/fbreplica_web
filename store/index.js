@@ -7,3 +7,4 @@ export const getters = {
       return state.auth.user
     }
   }
+

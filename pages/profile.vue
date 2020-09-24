@@ -4,6 +4,10 @@
       <h2 class="title">My Profile</h2>
       <div class="content">
         <p>
+          <strong>Name:</strong>
+          {{ loggedInUser.name }}
+        </p>
+        <p>
           <strong>Username:</strong>
           {{ loggedInUser.username }}
         </p>

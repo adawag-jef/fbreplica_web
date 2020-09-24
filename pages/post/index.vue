@@ -1,5 +1,30 @@
 <template>
     <div class="container">
+
+          <v-card
+            class="mx-auto"
+            outlined
+        >
+            <v-list-item three-line>
+            <v-list-item-content>
+                <div class="overline mb-4">Topic</div>
+                <v-list-item-title class="headline mb-1">Post Title</v-list-item-title>
+                <v-list-item-subtitle>Post Description</v-list-item-subtitle>
+            </v-list-item-content>
+
+            <v-list-item-avatar
+                tile
+                size="80"
+                color="grey"
+            ></v-list-item-avatar>
+            </v-list-item>
+
+            <v-card-actions>
+            <v-btn text>No of Comments</v-btn>
+            <v-btn text>Created By</v-btn>
+            </v-card-actions>
+        </v-card>
+
         <div class="row">
             <div class="col-12">
                 <div class="comments">
